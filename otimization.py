@@ -18,7 +18,7 @@ functions and seperate the value for each constraint function by a comma """
 rhs_contraints = [15,120,100]
 
 # solving for the optimal solution using our imported librarie and package
-optimal_solution = scipy.optimize,linprog(cost_variableZ,constraints,rhs_contraints, 
+optimal_solution = scipy.optimize.linprog(cost_variableZ,constraints,rhs_contraints, 
                                           method = "highs")
 
 # Printing the optimal solution
